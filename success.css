@@ -19,63 +19,38 @@
   --grey: hsl(231, 7%, 60%);
 }
 
-h1 {
-  margin-top: 2.25rem;
+.card{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 376px) {
-  .illu-desktop {
-    display: none;
+    .card{
+        margin-inline: 24px;
+    }
+  .upper-side{
+    margin-top: 150px;
   }
-  form {
-    margin-inline: 24px;
-  }
-
-  h1,
-  .description {
-    margin-bottom: 24px;
-  }
-
-  li {
-    display: flex;
-    align-items: flex-start;
-  }
-  li img {
-    margin-right: 10px;
-    width: 22px;
+  h1 {
+    margin-bottom: 22px;
+    margin-top: 36px;
   }
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 44px;
-  }
-  label {
-    font-weight: bold;
-    font-size: 12px;
-  }
-
-  input,
   button {
     height: 56px;
     width: 100%;
     border-radius: 8px;
   }
-
-  input {
-    border: 1px solid var(--grey);
-    padding-left: 24px;
-  }
-
   button {
     color: var(--white);
     background-color: var(--dark-slate-grey);
-    font-weight: bold;
     border: none;
+    font-weight: bold;
     margin-bottom: 40px;
   }
-  .mail{
+  .mail {
     display: flex;
     flex-direction: column;
     gap: 8px;
