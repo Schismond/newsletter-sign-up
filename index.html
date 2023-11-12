@@ -11,7 +11,7 @@
     />
     <title>Newsletter sign-up form with success message</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- Sign-up form start -->
@@ -20,18 +20,13 @@
       <div class="card">
         <div class="illustration">
           <img
-            class="illu-desktop"
-            src="/assets/images/illustration-sign-up-desktop.svg"
-            alt="illustration desktop"
-          />
-          <img
             class="illu-mobile"
             src="/assets/images/illustration-sign-up-mobile.svg"
             alt=" illustration mobile"
           />
         </div>
 
-        <form action="">
+        <form id="myForm" action="/succes.html">
           <h1>Stay updated!</h1>
           <p class="description">
             Join 60,000+ product managers receiving monthly updates on:
@@ -60,7 +55,10 @@
             </li>
           </ul>
           <div class="mail">
-            <label for="email">Email address</label>
+            <div class="labelAndError">
+              <label for="email"><strong> Email address</strong></label>
+              <p id="error"><strong>valid email required</strong></p>
+            </div>
             <input
               type="email"
               name="mail"
@@ -69,8 +67,19 @@
               required
             />
           </div>
-          <button>Subscribe to monthly newsletter</button>
+          <input
+            id="btn"
+            type="submit"
+            value="Subscribe to monthly newsletter"
+          />
         </form>
+        <div class="illustration">
+          <img
+            class="illu-desktop"
+            src="/assets/images/illustration-sign-up-desktop.svg"
+            alt="illustration desktop"
+          />
+        </div>
       </div>
     </div>
   </body>
