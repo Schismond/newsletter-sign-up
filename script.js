@@ -2,12 +2,8 @@ const emailInput = document.getElementById("mail");
 const submitButton = document.getElementById("btn");
 const errorMessage = document.getElementById("error");
 
-console.log(emailInput);
-console.log(submitButton);
 
-submitButton.addEventListener("click", function () {
-  console.log("clicked");
-
+submitButton.addEventListener("click", () => {
   if (emailInput.checkValidity() === false) {
     emailInput.style.backgroundColor = "#ffe8e6";
     emailInput.style.color = "var(--tomato)";
@@ -16,9 +12,13 @@ submitButton.addEventListener("click", function () {
   }
 });
 
-emailInput.addEventListener("input", function () {
+emailInput.addEventListener("input", () => {
   emailInput.style.backgroundColor = "white";
   emailInput.style.color = "#000";
   emailInput.style.outline = "0px solid black";
   error.style.display = "none";
 });
+
+
+
+
