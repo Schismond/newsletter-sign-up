@@ -19,7 +19,7 @@
   --grey: hsl(231, 7%, 60%);
 }
 
-.container {
+main {
   min-height: 100vh;
   display: grid;
   place-content: center;
@@ -134,7 +134,7 @@ label,
 }
 
 @media screen and (max-width: 376px) {
-  .container {
+  main {
     display: block;
   }
 

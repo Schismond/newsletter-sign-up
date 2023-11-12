@@ -19,7 +19,7 @@
   --grey: hsl(231, 7%, 60%);
 }
 
-.container{
+main{
   min-height: 100vh;
   background-color: var(--charcoal-grey);
   display: grid;
