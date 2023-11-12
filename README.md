@@ -13,13 +13,16 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Github Pages](https://schismond.github.io/newsletter-sign-up/)
+
+OR
+
+- [Netlify](https://schismond-newsletter-sign-up.netlify.app)
 
 
 ### Built with
